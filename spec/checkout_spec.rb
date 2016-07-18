@@ -1,18 +1,18 @@
 require "checkout"
 
 describe Checkout do
-  # subject(:checkout) { described_class.new }
-  describe "#basket" do
-    it "initializes in 0" do
-      co = Checkout.new
-      expect(co.basket).to eq(nil)
+  subject(:checkout) { described_class.new }
+
+  describe "basket" do
+    it "its empty when initialized" do
+      expect(checkout.basket.length).to eq(0)
     end
   end
 
-  # describe "#scan" do
-  #   it "stores item scaned in the basket" do
-  #     co = Checkout.new(promotional_rules)
-  #     co.scan("lavander heart")
-  #   end
-  # end
+  describe "#scan" do
+    it "stores item scaned in the basket" do
+      checkout.scan("lavander heart")
+    expect(checkout.basket.length).to eq(1) 
+    end
+  end
 end
