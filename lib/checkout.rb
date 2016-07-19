@@ -9,4 +9,5 @@ class Checkout
   def scan(item)
     basket.push(item)
   end
+
 end

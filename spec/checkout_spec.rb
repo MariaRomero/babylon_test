@@ -12,7 +12,13 @@ describe Checkout do
   describe "#scan" do
     it "stores item scaned in the basket" do
       checkout.scan("lavander heart")
-    expect(checkout.basket.length).to eq(1) 
+    expect(checkout.basket.length).to eq(1)
     end
   end
+
+  # describe "#total" do
+  #   it "adds items in basket" do
+  #     checkout.scan("lavander heart")
+  #
+  # end
 end
