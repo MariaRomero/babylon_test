@@ -1,4 +1,4 @@
-# babylon_test
+# Checkout_test
 
 To clone:  
 `git clone https://github.com/MariaRomero/babylon_test`  
